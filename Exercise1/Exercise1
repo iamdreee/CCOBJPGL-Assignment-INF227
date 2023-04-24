@@ -1,0 +1,26 @@
+public class App {
+
+static boolean iwillReview = true;
+static boolean iwillNotfail = true;
+
+
+    public static void main(String[] args) throws Exception {
+        
+
+        App myApp = new App();
+
+        //precondition
+        assert iwillReview == true: "nakatulog ako";
+
+        myApp.exam();
+
+        //postcondition
+       assert iwillNotfail == true:"Papasa ako next time";
+
+        
+    }
+
+    void exam(){
+        iwillNotfail = false;
+}
+}
